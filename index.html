@@ -24,6 +24,9 @@
                 <label for="age">Your Age</label>
                 <input type="number" name="age" id="age" min="21" max="100">
                 <h5>*Must be over 21 to enter</h5>
+                <label for="password">Password(Must be 6 Alphanumeric characters)</label>
+                <span class="required-field">*</span>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{6}" title="6 Alphanumeric Character Passcode">
             </div>
             <fieldset> 
                 <legend>
@@ -95,7 +98,7 @@
 
 
                 <label for="zip">Zip Code</label>
-                <input type="number" id="zip" name="zip">
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="5-Didit US Zip Code">
             </fieldset>
 
             <fieldset>
